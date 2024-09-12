@@ -254,7 +254,7 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 
                 </div>
             </div>
-            <form action="">
+            <form id="contactForm" action="">
                 <input type="text" placeholder="name" class="box">
                 <input type="email" placeholder="email" class="box">
                 <input type="text" placeholder="project" class="box">
@@ -277,6 +277,21 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js fils link  -->
     <script src="js/script.js"></script>
+
+
+
+      <!-- Inline JavaScript for the "Send" button -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+
+            // Display thank you message
+            alert("Thank you from Gyanendra!");
+
+            // Optionally reset the form
+            this.reset();
+        });
+    </script>
 
    
 
