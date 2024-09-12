@@ -82,6 +82,10 @@
                 <a href="https://drive.google.com/file/d/1jp7whIOunC6EPqln11uPJvOLCMzfzu35/view?usp=drive_link" target="_blank"> <button class="btn" id="downloadBtn">download CV <i class="fas fa-download"></i></button></a>
 
 
+<button class="btn" id="downloadBtn">download CV <i class="fas fa-download"></i></button>
+
+                
+
             </div>
             <div class="counter">
                 <div class="box">
@@ -227,6 +231,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js fils link  -->
     <script src="js/script.js"></script>
+
+
+    <script>
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    window.open('https://drive.google.com/file/d/1jp7whIOunC6EPqln11uPJvOLCMzfzu35/view?usp=drive_link', '_blank');
+});
+</script>
 
 </body>
 
