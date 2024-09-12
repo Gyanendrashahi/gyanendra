@@ -280,19 +280,6 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 
 
 
-      <!-- Inline JavaScript for the "Send" button -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from actually submitting
-
-            // Display thank you message
-            alert("Thank you from Gyanendra!");
-
-            // Optionally reset the form
-            this.reset();
-        });
-    </script>
-
    
 
     
