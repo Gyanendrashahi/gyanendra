@@ -280,13 +280,6 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 
 
 
-                document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent the form from refreshing the page
-    var submitBtn = document.getElementById("submitBtn");
-    submitBtn.innerHTML = 'Thank you <i class="fas fa-check"></i>';
-    submitBtn.disabled = true; // Optionally, disable the button after submission
-});
-
 
 
    
