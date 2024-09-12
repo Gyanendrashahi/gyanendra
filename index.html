@@ -218,6 +218,17 @@
     <!-- custom js fils link  -->
     <script src="js/script.js"></script>
 
+    // Add this in your <script> tag or js/script.js file
+document.querySelector('.btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Display the thank you message
+    alert("Thank you from Gyanendra, see you later!");
+
+    // Optionally, reset the form if needed
+    document.querySelector('form').reset();
+});
+
 </body>
 
 </html>
