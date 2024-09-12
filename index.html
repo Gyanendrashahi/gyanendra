@@ -194,7 +194,7 @@
 
                 </div>
             </div>
-            <form action="">
+            <form id="contactForm" action="">
                 <input type="text" placeholder="name" class="box">
                 <input type="email" placeholder="email" class="box">
                 <input type="text" placeholder="project" class="box">
@@ -219,16 +219,16 @@
     <script src="js/script.js"></script>
 
    
-<!-- Inline JavaScript for the "Send" button -->
+ <!-- Inline JavaScript for the "Send" button -->
     <script>
-        document.querySelector('.btn').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the form from submitting
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
 
             // Display thank you message
-            alert("Thank you from Gyanendra, see you later!");
+            alert("Thank you for your message!");
 
             // Optionally reset the form
-            document.querySelector('form').reset();
+            this.reset();
         });
     </script>
 
