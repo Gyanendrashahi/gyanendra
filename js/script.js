@@ -279,17 +279,7 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
     <script src="js/script.js"></script>
 
    
-<!-- Inline JavaScript for the "Send" button -->
-   
-        document.querySelector('.btn').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the form from submitting
 
-            // Display thank you message
-            alert("Thank you from Gyanendra, see you later!");
-
-            // Optionally reset the form
-            document.querySelector('form').reset();
-        });
     
 
 </body>
